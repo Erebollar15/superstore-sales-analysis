@@ -8,7 +8,7 @@ This project analyzes four years of sales data (2014–2018) from a fictional re
 
 Data Cleaning
 
-The raw CSV failed to import into MySQL due to a non-ASCII character (a dagger symbol, †) embedded in one product name — MySQL's import process rejected the entire file because of it. I traced the issue to the specific byte causing the error, replaced it with a plain hyphen, and validated the full file before successfully re-importing all 9,994 rows.
+The raw CSV failed to import into MySQL due to a non-ASCII character (a dagger symbol, †) embedded in one product name, MySQL's import process rejected the entire file because of it. I traced the issue to the specific byte causing the error, replaced it with a plain hyphen, and validated the full file before successfully re-importing all 9,994 rows.
 
 SQL Analysis
 
